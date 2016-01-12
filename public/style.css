@@ -1,0 +1,36 @@
+.header {
+	font-size: 30px; 
+	font-weight: bold; 
+	color:#4d1900; 
+	vertical-align: middle
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid #73AD21;
+    padding: 10px;
+}
+
+.textinput {
+	width: 200px;
+}
+
+footer {
+  font-size: 12px;
+  color: #3B3B3B;
+  background: #747474;
+  text-align: center;
+  padding: 6px 0 0 0;
+
+  position: fixed;
+  bottom: 0px;
+}
+
+footer a {
+  color: #999;
+}
+
+footer a:hover {
+  color: #efefef;
+}
