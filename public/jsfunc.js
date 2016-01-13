@@ -69,18 +69,18 @@
             });
         });
 
-		function tradeValidate(f)
+	function tradeValidate(f)
         {
 			if (f.submit.value == "Submit") {
 				if (f.quantity.value == "") {
 					alert("Quantity can not be 0");
 					return false;
 				}
-				if (f.select.value == "buy" && f.quantity.value * f.price.value >= f.balance.value) {
+				if (f.select.value == "buy" && Number(f.quantity.value * f.price.value) > Number(f.balance.value)) {
 					alert("Not enough balance for this transaction!");
 					return false;
 				} 
-				else if (f.select.value == "sell" && f.quantity.value > f.shares.value) {
+				else if (f.select.value == "sell" && Number(f.quantity.value) > Number(f.shares.value)) {
 					alert("You can not oversell!");
 					return false;
 				}
@@ -97,7 +97,7 @@
 				}
 				else {
 					var price1 = Number(document.getElementById("price_p").innerHTML);
-					if (f.quantity.value * price1 > f.balance.value) {
+					if (f.quantity.value * price1 > Number(f.balance.value)) {
 						alert("Not enough balance for this transaction!");
 						return false;
 					}
