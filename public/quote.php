@@ -7,8 +7,7 @@
      */
 
     // defines a stock
-    class Stock
-    {
+    class Stock {
         public $price;
         public $high;
         public $low;
@@ -21,11 +20,9 @@
     // try to get quote
     $handle = @fopen("http://download.finance.yahoo.com/d/quotes.csv?s={$_GET['symbol']}&f=sl1d1t1c1ohgv", "r");
 
-    if ($handle !== FALSE)
-    {
+    if ($handle !== FALSE) {
         $data = fgetcsv($handle);
-        if ($data !== FALSE)
-        {
+        if ($data !== FALSE) {
             $stock = new Stock();
         
             if (is_numeric($data[1]))
