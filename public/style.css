@@ -1,8 +1,8 @@
 .header {
-	font-size: 30px; 
-	font-weight: bold; 
-	color:#4d1900; 
-	vertical-align: middle
+    font-size: 30px; 
+    font-weight: bold; 
+    color:#4d1900; 
+    vertical-align: middle
 }
 
 .center {
@@ -13,7 +13,7 @@
 }
 
 .textinput {
-	width: 200px;
+    width: 200px;
 }
 
 footer {
